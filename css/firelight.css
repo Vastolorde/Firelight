@@ -10,29 +10,92 @@
  
 	1. Reset
 	2. Global
+		1. Buttons
 	
 
 /*------------------------------------------------------------------
 [1. Reset]
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, 
+body{
 	margin: 0;
 	padding: 0;
-	border: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+*{
+	outline: none;
+	-webkit-box-sizing: border-box; 
+        -moz-box-sizing:border-box;    
+            box-sizing: border-box
 }
 
 /*------------------------------------------------------------------
-[1. Global]
+[2. Global]
 */
+
+/* [1. Buttons] */
+.button{
+	position: relative;
+	text-decoration: none;
+	background-color: rgba(233, 233, 233, .8); 
+	color: rgba(29, 29, 29, 1); 
+	border: 1px solid rgba(195, 195, 195, 1);
+	cursor: pointer; 
+	display: inline-block;
+	font-size: 15px; 
+	font-weight: bold; 
+	margin: 0; 
+	padding: 10px 15px; 
+	text-align: center; 
+	text-decoration: none;
+	-webkit-box-shadow: 0 1px 0 rgba(245, 245, 245, .4) inset; 
+		-moz-box-shadow:0 1px 0 rgba(245, 245, 245, .4) inset; 
+			box-shadow: 0 1px 0 rgba(245, 245, 245, .4) inset; 
+	-webkit-border-radius: 4px;
+		-moz-border-radius:4px;
+			border-radius: 4px;
+}
+.button:hover, 
+.button:focus{ 
+	background-color: rgba(221, 221, 221, 1); 
+}
+.button.blue{ 
+	background-color: rgba(0, 136, 204, .8);
+	border: 1px solid rgba(10, 65, 194, 1);
+	color: white;
+}
+.button.blue:hover,
+.button.blue:focus{
+	background-color: rgba(0, 136, 204, 1);
+}
+.button.red{
+	background-color: rgba(242, 46, 46, .8);
+	border: 1px solid rgba(191, 36, 36, 1);
+	color: white;
+}
+.button.red:hover,
+.button.red:focus{
+	background-color: rgba(242, 46, 46, 1);
+}
+.button.green{
+	background-color: rgba(73, 140, 90, .8);
+	border: 1px solid rgba(44, 89, 63, 1);
+	color: white;
+}
+.button.green:hover,
+.button.green:focus{
+	background-color: rgba(73, 140, 90, 1);
+}
+
+
+.button.square{
+	-webkit-border-radius: 0px;
+		-moz-border-radius:0px;
+			border-radius: 0px;
+}
+.button.round{
+	-webkit-border-radius: 150px;
+		-moz-border-radius:150px;
+			border-radius: 150px;
+}
